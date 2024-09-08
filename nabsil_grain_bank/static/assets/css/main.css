@@ -148,7 +148,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 63px;
   margin-right: 8px;
 }
 
@@ -168,7 +168,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  background-color: color-mix(in srgb, var(--nav-background), transparent 25%);
+  background-color: color-mix(in srgb, var(--nav-background), transparent 15%);
 }
 
 /*--------------------------------------------------------------
@@ -936,6 +936,7 @@ section,
 --------------------------------------------------------------*/
 .featured-services {
   padding: 40px 0 10px 0;
+  background-color: color-mix(in srgb, var(--nav-background), transparent 1%);
 }
 
 .featured-services .service-item {
@@ -960,7 +961,7 @@ section,
 }
 
 .featured-services .service-item .title {
-  color: var(--heading-color);
+  color: var(--contrast-color);
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 20px;
@@ -969,7 +970,7 @@ section,
 
 .featured-services .service-item .description {
   font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--contrast-color), transparent 25%);
   margin-bottom: 10px;
 }
 
@@ -1087,42 +1088,73 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services .service-item {
+
+.Services .card {
   background-color: var(--surface-color);
+  color: var(--default-color);
   padding: 30px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
   transition: 0.3s;
+  height: 100%;
+  border: 0;
 }
 
-.services .service-item .icon {
-  font-size: 36px;
-  line-height: 0;
-  margin-right: 30px;
-  color: var(--accent-color);
+.Services .card img {
+  padding: 30px 50px;
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
-.services .service-item .title {
+.Services .card h3 {
+  font-size: 24px;
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 20px;
+  margin-bottom: 18px;
 }
 
-.services .service-item .title a {
-  color: var(--heading-color);
+.Services .card:hover {
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.services .service-item .description {
-  line-height: 24px;
-  font-size: 14px;
-  margin: 0;
+.Services .card:hover img {
+  transform: scale(1);
 }
 
-.services .service-item:hover {
-  border-color: var(--accent-color);
+/*--------------------------------------------------------------
+# Promise Section
+--------------------------------------------------------------*/
+.promise .content h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
 }
 
-.services .service-item:hover .title a {
+.promise .promise-images img {
+  border-radius: 10px;
+}
+
+.promise .content .fst-italic {
+  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+}
+
+.promise .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.promise .content ul li {
+  padding: 10px 0 0 0;
+  display: flex;
+}
+
+.promise .content ul i {
   color: var(--accent-color);
+  margin-right: 0.5rem;
+  line-height: 1.2;
+  font-size: 1.25rem;
+}
+
+.promise .content p:last-child {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
