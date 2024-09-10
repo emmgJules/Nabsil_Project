@@ -1089,8 +1089,8 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 
-.Services .card {
-  background-color: var(--surface-color);
+.services .card {
+  background-color: color-mix(in srgb, var(--nav-background), transparent 1%);
   color: var(--default-color);
   padding: 30px;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.1);
@@ -1100,23 +1100,26 @@ section,
   border: 0;
 }
 
-.Services .card img {
-  padding: 30px 50px;
+.services .card img {
   transition: 0.5s;
   transform: scale(1.1);
 }
 
-.Services .card h3 {
+.services .card h3 {
+  margin-top: 20px;
   font-size: 24px;
+  color: color-mix(in srgb, var(--contrast-color), transparent 10%);
   font-weight: 700;
-  margin-bottom: 18px;
+}
+.services .card p {
+  color: color-mix(in srgb, var(--contrast-color), transparent 45%);
 }
 
-.Services .card:hover {
+.services .card:hover {
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.Services .card:hover img {
+.services .card:hover img {
   transform: scale(1);
 }
 
@@ -1158,65 +1161,92 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Call To Action Section
+# goals Section
 --------------------------------------------------------------*/
-.call-to-action {
-  padding: 80px 0;
-  position: relative;
-  clip-path: inset(0);
+.goals .goals-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  border-radius: 5%;
+  transition: all ease-in-out 0.4s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.call-to-action img {
-  position: fixed;
-  top: 0;
-  left: 0;
+.goals .goals-item .icon {
+  margin-bottom: 10px;
+}
+
+.goals .goals-item .icon i {
+  color: var(--contrast-color);
+  font-size: 55px;
+  transition: 0.3s;
+}
+
+.goals .goals-item h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.goals .goals-item h2 a {
+  color: var(--contrast-color);
+  transition: ease-in-out 0.3s;
+}
+
+.goals .goals-item:hover {
+  transform: translateY(-10px);
+}
+
+.goals .goals-item:hover h4 a {
+  color: var(--accent-color);
+}
+
+
+/*--------------------------------------------------------------
+# howitworks Section
+--------------------------------------------------------------*/
+.howitworks .card-item {
+  position: relative;
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.howitworks .card-item .card-bg {
+  min-height: 300px;
+  position: relative;
+}
+
+.howitworks .card-item .card-bg img {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   z-index: 1;
 }
 
-.call-to-action:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 50%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
+.howitworks .card-item .card-body {
+  padding: 30px;
 }
 
-.call-to-action .container {
-  position: relative;
-  z-index: 3;
-}
-
-.call-to-action h3 {
-  font-size: 28px;
+.howitworks .card-item h4 {
   font-weight: 700;
-  color: var(--default-color);
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
-.call-to-action p {
-  color: var(--default-color);
-}
-
-.call-to-action .cta-btn {
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 40px;
-  border-radius: 5px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid var(--contrast-color);
-  color: var(--contrast-color);
-}
-
-.call-to-action .cta-btn:hover {
-  background: var(--accent-color);
-  border: 2px solid var(--accent-color);
+.howitworks .card-item p {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin: 0;
 }
 
 /*--------------------------------------------------------------
