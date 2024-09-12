@@ -1,10 +1,17 @@
-
 /* Fonts */
-:root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+@font-face {
+  font-family: "The Seasons";
+  src: url("../Demo_Fonts/Fontspring-DEMO-theseasons-reg.otf") format("truetype");
+  /* Adjust the path as needed */
 }
+
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "The Seasons", sans-serif; /* Use The Seasons font */
+  --nav-font: "Poppins", sans-serif;
+}
+
+
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
@@ -513,6 +520,7 @@ h6 {
 
 .footer .footer-contact p {
   margin-bottom: 5px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
 .footer .footer-newsletter .newsletter-form {
@@ -735,6 +743,7 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: color-mix(in srgb, var(--nav-background), transparent 0%);
 }
 
 .section-title h2:before {
@@ -1007,11 +1016,13 @@ section,
   text-transform: uppercase;
   margin-bottom: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-family: var(--heading-font);
 }
 
 .about .content h3 {
   font-size: 2rem;
   font-weight: 700;
+  font-family: var(--heading-font);
 }
 
 .about .content ul {
@@ -1130,41 +1141,51 @@ section,
   transform: scale(1);
 }
 
+
 /*--------------------------------------------------------------
-# Promise Section
+# promises Section
 --------------------------------------------------------------*/
-.promise .content h3 {
-  font-size: 1.75rem;
-  font-weight: 700;
+.promises .promises-item {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  height: 100%;
 }
 
-.promise .promise-images img {
-  border-radius: 10px;
+.promises .promises-item .icon {
+  margin-bottom: 10px;
 }
 
-.promise .content .fst-italic {
-  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
-}
-
-.promise .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.promise .content ul li {
-  padding: 10px 0 0 0;
-  display: flex;
-}
-
-.promise .content ul i {
+.promises .promises-item .icon i {
   color: var(--accent-color);
-  margin-right: 0.5rem;
-  line-height: 1.2;
-  font-size: 1.25rem;
+  font-size: 36px;
+  transition: 0.3s;
 }
 
-.promise .content p:last-child {
+.promises .promises-item h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.promises .promises-item h4 a {
+  color: var(--heading-color);
+  transition: ease-in-out 0.3s;
+}
+
+.promises .promises-item p {
+  line-height: 24px;
+  font-size: 14px;
   margin-bottom: 0;
+}
+
+.promises .promises-item:hover {
+  transform: translateY(-10px);
+}
+
+.promises .promises-item:hover h4 a {
+  color: var(--accent-color);
 }
 
 /*--------------------------------------------------------------
@@ -1217,6 +1238,7 @@ section,
 --------------------------------------------------------------*/
 .howitworks .card-item {
   position: relative;
+  background: color-mix(in srgb, var(--accent-color), transparent 95%);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10%;
   border-radius: 0;
@@ -1247,12 +1269,14 @@ section,
 
 .howitworks .card-item h4 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 15px;
+  color: color-mix(in srgb, var(--nav-background), transparent 0%);
 }
 
 .howitworks .card-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, var(--heading-color), transparent 20%);
+  font-weight: 400;
   margin: 0;
 }
 
@@ -1297,13 +1321,13 @@ section,
 
 .team .member .member-img .social a {
   transition: 0.3s;
-  color: var(--contrast-color);
+  color: var(--accent-color);
   font-size: 20px;
   margin: 0 8px;
 }
 
 .team .member .member-img .social a:hover {
-  color: var(--accent-color);
+  color: var(--contrast-color);
 }
 
 .team .member .member-info {
@@ -1352,9 +1376,6 @@ section,
 .partners .partners-logo img {
   padding: 20px 40px;
   max-width: 120%;
-  transition: 0.3s;
-  opacity: 0.5;
-  filter: grayscale(100);
 }
 
 .partners .partners-logo img:hover {

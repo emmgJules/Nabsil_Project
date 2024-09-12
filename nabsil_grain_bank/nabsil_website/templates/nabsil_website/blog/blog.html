@@ -1,0 +1,299 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Nabsil Grain Bank</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=The+Seasons&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url "index_page" %}" class="logo d-flex align-items-center me-auto">
+        <img src="{% static 'assets/img/logo.png' %} " alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url "index_page" %}#hero" class="active">Home</a></li>
+          <li><a href="{% url "index_page" %}#about">About</a></li>
+          <li><a href="{% url "index_page" %}#services">Services</a></li>
+          <li><a href="{% url "blog" %}#blog-posts">Blog</a></li>
+          <li><a href="{% url "faqs" %}#faq-2">FAQs</a></li>
+          <li><a href="{% url "contact" %}#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url('{% static "assets/img/page-title-bg.jpg" %}');">
+      <div class="container position-relative">
+        <h1>Blog</h1>
+        <p>Welcome to the NABSIL Grain Bank Blog</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url "index_page" %}">Home</a></li>
+            <li class="current">Blog</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts section">
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <article class="d-flex flex-column">
+
+              <div class="post-img">
+                <img src="{% static 'assets/img/blog/blog-1.jpg' %}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="title">
+                <a href="{% url "blog" %}">Revolutionizing Grain Storage with Smart Silo Technology</a>
+              </h2>
+
+              <div class="meta-top">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{% url "blog" %}">Author: NABSIL Team</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{% url "blog" %}"><time datetime="2022-01-01">Date: Sep 12, 2024</time></a></li>
+                </ul>
+              </div>
+
+              <div class="content">
+                <p>
+                  At NABSIL Grain Bank, our innovative Smart Silo Storage System is transforming grain preservation. By offering a controlled environment that keeps crops in peak condition, farmers can store their produce until the perfect market opportunity arises. Learn how our advanced infrastructure is helping farmers increase their revenue and reduce post-harvest losses.
+                </p>
+              </div>
+
+              <div class="read-more mt-auto align-self-end">
+                <a href="{% url "blog" %}">Read More</a>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="d-flex flex-column">
+
+              <div class="post-img">
+                <img src="{% static 'assets/img/blog/blog-2.jpg' %}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="title">
+                <a href="{% url "blog" %}">Digital Commodity Trading: The Future of Agriculture</a>
+              </h2>
+
+              <div class="meta-top">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{% url "blog" %}">Author: NABSIL Team</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{% url "blog" %}"><time datetime="2022-01-01">Date: Sep 5, 2024</time></a></li>
+                </ul>
+              </div>
+
+              <div class="content">
+                <p>
+                  NABSIL’s Digital Commodity Trading Platform makes grain sales simple and transparent. By connecting farmers and commercial buyers, our platform automates transactions through smart contracts, ensuring quick and secure payments. Find out how our platform is empowering farmers and buyers alike with seamless, real-time transactions.
+                </p>
+              </div>
+
+              <div class="read-more mt-auto align-self-end">
+                <a href="{% url "blog" %}">Read More</a>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="d-flex flex-column">
+
+              <div class="post-img">
+                <img src="{% static 'assets/img/blog/blog-3.jpg' %}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="title">
+                <a href="{% url "blog" %}">Structured Finance Solutions: Supporting Farmers Growth</a>
+              </h2>
+
+              <div class="meta-top">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{% url "blog" %}">Author: NABSIL Team</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{% url "blog" %}"><time datetime="2022-01-01">Date: Aug 28, 2024</time></a></li>
+                </ul>
+              </div>
+
+              <div class="content">
+                <p>
+                  Access to capital is crucial for farmers aiming to expand and optimize operations. Our structured finance solutions help bridge that gap by providing tailored financial products that support long-term growth. Learn how NABSIL is supporting agricultural success across Africa through sustainable financing.
+                </p>
+              </div>
+
+              <div class="read-more mt-auto align-self-end">
+                <a href="{% url "blog" %}">Read More</a>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="d-flex flex-column">
+
+              <div class="post-img">
+                <img src="{% static 'assets/img/blog/blog-4.jpg' %}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="title">
+                <a href="{% url "blog" %}">Optimized Supply Chain for Commercial Buyers</a>
+              </h2>
+
+              <div class="meta-top">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{% url "blog" %}">Author: NABSIL Team</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{% url "blog" %}"><time datetime="2022-01-01">Date: Aug 20, 2024</time></a></li>
+                </ul>
+              </div>
+
+              <div class="content">
+                <p>
+                  For commercial buyers, timely and reliable access to quality grain is paramount. NABSIL’s end-to-end logistics network ensures that buyers receive the best-graded grain, sourced from vetted producers, delivered directly to their operations. Discover how our logistics solutions minimize waste and maximize efficiency.
+                </p>
+              </div>
+
+              <div class="read-more mt-auto align-self-end">
+                <a href="{% url "blog" %}">Read More</a>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="d-flex flex-column">
+
+              <div class="post-img">
+                <img src="{% static 'assets/img/blog/blog-5.jpg' %}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="title">
+                <a href="{% url "blog" %}">Empowering Farmers with Just in Time Delivery</a>
+              </h2>
+
+              <div class="meta-top">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{% url "blog" %}">Author: NABSIL Team</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{% url "blog" %}"><time datetime="2022-01-01">Date: Date: Aug 15, 2024</time></a></li>
+                </ul>
+              </div>
+
+              <div class="content">
+                <p>
+                  With the power of our supply chain, farmers no longer need to worry about fragmented distribution. NABSIL's just-in-time delivery system ensures their produce reaches buyers when demand is high. Read more about how we're simplifying the process of getting crops from farm to market.
+                </p>
+              </div>
+
+              <div class="read-more mt-auto align-self-end">
+                <a href="{% url "blog" %}">Read More</a>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="d-flex flex-column">
+
+              <div class="post-img">
+                <img src="{% static 'assets/img/blog/blog-6.jpg' %}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="title">
+                <a href="{% url "blog" %}">The Role of Technology in Africa’s Grain Revolution</a>
+              </h2>
+
+              <div class="meta-top">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{% url "blog" %}">Author: NABSIL Team</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{% url "blog" %}"><time datetime="2022-01-01">Date: Aug 10, 2024</time></a></li>
+                </ul>
+              </div>
+
+              <div class="content">
+                <p>
+                  Technology is at the heart of agricultural transformation across Africa. From advanced storage solutions to digital trading platforms, discover how innovations at NABSIL are driving change and shaping the future of grain farming in Africa.
+                </p>
+              </div>
+              <div class="read-more mt-auto align-self-end">
+                <a href="{% url "blog" %}">Read More</a>
+              </div>
+            </article>
+          </div><!-- End post list item -->
+
+        </div>
+      </div>
+
+    </section><!-- /Blog Posts Section -->
+
+    <!-- Blog Pagination Section -->
+    <section id="blog-pagination" class="blog-pagination section">
+
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <ul>
+            <li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li>...</li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </section><!-- /Blog Pagination Section -->
+  </main>
+  {% include "nabsil_website/footer/footer.html" %}
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

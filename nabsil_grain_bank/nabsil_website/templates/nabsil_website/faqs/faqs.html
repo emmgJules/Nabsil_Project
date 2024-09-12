@@ -1,0 +1,162 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Nabsil Grain Bank</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=The+Seasons&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: rgba(0, 29, 0, 0.9);">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    
+          <a href="{% url "index_page" %}" class="logo d-flex align-items-center me-auto">
+            <img src="{% static 'assets/img/logo.png' %} " alt="">
+          </a>
+    
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="{% url "index_page" %}#hero" class="active">Home</a></li>
+              <li><a href="{% url "index_page" %}#about">About</a></li>
+              <li><a href="{% url "index_page" %}#services">Services</a></li>
+              <li><a href="{% url "blog" %}#blog-posts">Blog</a></li>
+              <li><a href="{% url "faqs" %}#faq-2">FAQs</a></li>
+              <li><a href="{% url "contact" %}#contact">Contact</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+    
+        </div>
+      </header>
+  <main class="main">
+    
+    <!-- Faq 2 Section -->
+    <section id="faq-2" class="faq-2 section light-background mt-5">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+        </div><!-- End Section Title -->
+        <div class="container">
+  
+          <div class="row justify-content-center">
+  
+            <div class="col-lg-10">
+  
+              <div class="faq-container">
+  
+                <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>How can I work with NABSIL Grain Bank?</h3>
+                  <div class="faq-content">
+                    <p>To begin working with us, simply contact us by submitting a request through our online form or via email. Provide details about your project, including your requirements, expected quantities, price targets, and deadlines. Our commercial department will review your request, analyze the scope of the project, and ensure that we fully understand your vision. We will then work with you to fulfill your needs and collaborate effectively to deliver the desired results.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+  
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>How do you take care of the packaging processes of products?</h3>
+                  <div class="faq-content">
+                    <p>NABSIL ensures that all grain products are carefully packaged to maintain their quality and safety. We use advanced, eco-friendly packaging materials that preserve the integrity of the grains during storage and transportation. The packaging is designed to prevent contamination and protect the grains from external factors such as moisture or pests, ensuring that they arrive in perfect condition to the buyers.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+  
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>How do you take care of transport/delivery of the collection?</h3>
+                  <div class="faq-content">
+                    <p>NABSIL offers a fully integrated logistics solution for transporting grain collections from our smart silos to the buyer’s destination. Our logistics team manages the end-to-end transportation process, utilizing a trusted network of carriers to ensure timely and efficient delivery. We focus on optimizing the supply chain to provide just-in-time deliveries, minimizing delays and reducing waste.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+  
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>How do you handle quality control?</h3>
+                  <div class="faq-content">
+                    <p>Quality control is central to our operations at NABSIL. We implement rigorous inspection processes at multiple stages, including during storage, packaging, and before delivery. Our Smart Silo System is equipped with advanced monitoring tools to maintain optimal storage conditions, ensuring that the grains retain their quality over time. Every batch undergoes grading and quality checks to meet industry standards before it is released for trade or shipment.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+  
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>How does NABSIL support farmers in optimizing grain sales?</h3>
+                  <div class="faq-content">
+                    <p>NABSIL supports farmers by offering access to our Digital Commodity Trading Platform, where they can list and sell their stored grain to a wide network of vetted buyers. Our platform uses smart contracts to automate transactions, ensuring transparency and immediate payments. By leveraging market insights and flexible storage solutions, farmers can choose the most favorable time to sell their grain, maximizing their profits</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+  
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>Can NABSIL assist with financing for farmers?</h3>
+                  <div class="faq-content">
+                    <p>Yes, NABSIL provides structured finance solutions to help farmers manage their cash flow while waiting for optimal market conditions to sell their grain. Our financing options allow farmers to access funds without the pressure of selling prematurely, ensuring that they can maximize the value of their stored grain.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+  
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>Can buyers trust the quality of grain sourced through NABSIL?</h3>
+                  <div class="faq-content">
+                    <p>Absolutely. NABSIL maintains stringent quality control measures at every stage—from storage to delivery. We partner only with vetted producers, and all grains undergo grading and inspection to ensure they meet industry standards. Buyers can trust that they are receiving high-quality, well-preserved grain sourced from reliable suppliers.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Faq 2 Section -->
+  </main>
+  
+  {% include "nabsil_website/footer/footer.html" %}
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
