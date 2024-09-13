@@ -512,10 +512,27 @@
         </div>
 
       </div>
+      {% if messages %}
+        <div class="col-12 d-flex justify-content-center mt-5">
+            {% for message in messages %}
+                <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %} alert-dismissible fade show text-center" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        </div>
+      {% endif %}
 
     </section><!-- /goals Section -->
   </main>
   {% include "nabsil_website/footer/footer.html" %}
+  {% if scroll_to %}
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          window.location.hash = '#{{ scroll_to }}';
+      });
+  </script>
+  {% endif %}
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
