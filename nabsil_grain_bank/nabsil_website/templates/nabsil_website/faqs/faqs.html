@@ -26,7 +26,7 @@
 </head>
 
 <body class="index-page">
-    <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: rgba(0, 29, 0, 0.9);">
+    <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
     
           <a href="{% url "index_page" %}" class="logo d-flex align-items-center me-auto">
@@ -38,24 +38,31 @@
               <li><a href="{% url "index_page" %}#hero" class="active">Home</a></li>
               <li><a href="{% url "index_page" %}#about">About</a></li>
               <li><a href="{% url "index_page" %}#services">Services</a></li>
-              <li><a href="{% url "blog" %}#blog-posts">Blog</a></li>
-              <li><a href="{% url "faqs" %}#faq-2">FAQs</a></li>
-              <li><a href="{% url "contact" %}#contact">Contact</a></li>
+              <li><a href="{% url "blog" %}#blog">Blog</a></li>
+              <li><a href="{% url "faqs" %}#faq">FAQs</a></li>
+              <li><a href="{% url "contact" %}#contacts">Contacts</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
     
         </div>
-      </header>
+    </header>
   <main class="main">
     
+    <!-- Page Title -->
+    <div id="faq" class="page-title dark-background" data-aos="fade" style="background-image: url('{% static "assets/img/page-title-bg-1.jpg" %}');">
+      <div class="container position-relative">
+        <h1>FAQs</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url "index_page" %}">Home</a></li>
+            <li class="current">Frequently Asked Questions</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
     <!-- Faq 2 Section -->
-    <section id="faq-2" class="faq-2 section light-background mt-5">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Frequently Asked Questions</h2>
-        </div><!-- End Section Title -->
+    <section id="faq-2" class="faq-2 section light-background">
         <div class="container">
   
           <div class="row justify-content-center">
@@ -146,6 +153,7 @@
         {% endif %}
   
     </section><!-- /Faq 2 Section -->
+    
   </main>
   <footer id="footer" class="footer dark-background">
   
@@ -173,7 +181,6 @@
               <li><i class="bi bi-chevron-right"></i> <a href="{% url "index_page" %}#about">About us</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="{% url "index_page" %}#services">Services</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
   

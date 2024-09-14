@@ -153,13 +153,14 @@
         </div>
 
       </div>
-    </section><!-- /About Section -->
+      
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background mt-5">
 
-    <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section">
-
+      <img src="{% static 'assets/img/cta-bg.jpg' %}" alt="">
+  
       <div class="container">
-
+  
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
@@ -192,239 +193,233 @@
 
       </div>
 
-    </section><!-- /Featured Services Section -->
-    <!-- Services Section -->
-
-    <!-- promises Section -->
-    <section id="promises" class="promises section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Promises</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="promises-item position-relative">
-              <div class="icon"><i class="fa-solid fa-warehouse"></i></div>
-              <h4><a href="{% url "index_page" %}#services" class="stretched-link">Mitigate grain losses</a></h4>
-              <p>Our advanced storage facilities and technology ensure optimal conditions to minimize grain spoilage and maximize farmers' potential earnings.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="promises-item position-relative">
-              <div class="icon"><i class="fa-solid fa-hand-holding-usd"></i></div>
-              <h4><a href="{% url "index_page" %}#services" class="stretched-link">Immediate liquidity</a></h4>
-              <p>Our digital platform enables farmers to quickly sell their stored grains and access funds, easing financial burdens.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="promises-item position-relative">
-              <div class="icon"><i class="fa-solid fa-truck-moving"></i></div>
-              <h4><a href="{% url "index_page" %}#services" class="stretched-link">Integrated supply chain</a></h4>
-              <p>Our end-to-end solutions connect farmers directly with buyers, processors, and retailers, optimizing efficiency and reducing waste.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="promises-item position-relative">
-              <div class="icon"><i class="fa-solid fa-unlock-alt"></i></div>
-              <h4><a href="{% url "index_page" %}#services" class="stretched-link">Transparency</a></h4>
-              <p>We provide clear and accurate information about market prices, demand, and transaction details, fostering trust and fair trade practices.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="promises-item position-relative">
-              <div class="icon"><i class="fa-solid fa-shield-alt"></i></div>
-              <h4><a href="{% url "index_page" %}#services" class="stretched-link">Peace of mind</a></h4>
-              <p>Farmers can have confidence in the secure storage of their crops, free from worries about loss or damage.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="promises-item position-relative">
-              <div class="icon"><i class="fa-solid fa-cogs"></i></div>
-              <h4><a href="{% url "index_page" %}#services" class="stretched-link">Quality assurance</a></h4>
-              <p>Our rigorous quality control measures ensure that stored grains meet the highest standards, satisfying buyer requirements.</p>
-            </div>
-          </div><!-- End Service Item -->
-
+    </section><!-- /Call To Action Section -->
+  
+      <!-- promises Section -->
+      <section id="promises" class="promises section">
+  
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Our Promises</h2>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="promises-item position-relative">
+                <div class="icon"><i class="fa-solid fa-warehouse"></i></div>
+                <h4><a href="{% url "index_page" %}#promises" class="stretched-link">Mitigate grain losses</a></h4>
+                <p>Our advanced storage facilities and technology ensure optimal conditions to minimize grain spoilage and maximize farmers' potential earnings.</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="promises-item position-relative">
+                <div class="icon"><i class="fa-solid fa-hand-holding-usd"></i></div>
+                <h4><a href="{% url "index_page" %}#promises" class="stretched-link">Immediate liquidity</a></h4>
+                <p>Our digital platform enables farmers to quickly sell their stored grains and access funds, easing financial burdens.</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="promises-item position-relative">
+                <div class="icon"><i class="fa-solid fa-truck-moving"></i></div>
+                <h4><a href="{% url "index_page" %}#promises" class="stretched-link">Integrated supply chain</a></h4>
+                <p>Our end-to-end solutions connect farmers directly with buyers, processors, and retailers, optimizing efficiency and reducing waste.</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div class="promises-item position-relative">
+                <div class="icon"><i class="fa-solid fa-unlock-alt"></i></div>
+                <h4><a href="{% url "index_page" %}#promises" class="stretched-link">Transparency</a></h4>
+                <p>We provide clear and accurate information about market prices, demand, and transaction details, fostering trust and fair trade practices.</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="500">
+              <div class="promises-item position-relative">
+                <div class="icon"><i class="fa-solid fa-shield-alt"></i></div>
+                <h4><a href="{% url "index_page" %}#promises" class="stretched-link">Peace of mind</a></h4>
+                <p>Farmers can have confidence in the secure storage of their crops, free from worries about loss or damage.</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="600">
+              <div class="promises-item position-relative">
+                <div class="icon"><i class="fa-solid fa-cogs"></i></div>
+                <h4><a href="{% url "index_page" %}#promises" class="stretched-link">Quality assurance</a></h4>
+                <p>Our rigorous quality control measures ensure that stored grains meet the highest standards, satisfying buyer requirements.</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+          </div>
+  
         </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Team</h2>
-        <p>NABSIL Grain Bank's expert team integrates agricultural, technology, and customer service skills to modernize grain storage and supply chains, promoting food security and economic growth through sustainable practices.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="{% static 'assets/img/team/team-1.jpg' %}" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/nathnael-mengistu/" target="_blank"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Nathnael Dereje </h4>
-              <span>Chief Executive Officer | CEO</span>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-            <div class="member-img">
-              <img src="{% static 'assets/img/team/team-2.jpg' %}" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/sltanu-kifile" target="_blank"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Sltanu Kifile</h4>
-              <span>Chief Technology Officer | CTO</span>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="{% static 'assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/mihigobona/" target="_blank"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info text-center">
-              <h4>Bonaventure Mihigo </h4>
-              <span>Chief Operation Officer | COO</span>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
-    
-    <!-- Clients Section -->
-    <section id="partners" class="partners section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Our Partners</h2>
-      </div><!-- End Section Title -->
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper init-swiper">
-            <div class="container" data-aos="fade-up">
-
-              <div class="row gy-4 d-flex justify-content-center">
-      
-                <div class="col-xl-2 col-md-3 col-6 partners-logo">
-                  <img src="{% static 'assets/img/partners/partner-1.png' %} " class="img-fluid" alt="">
-                </div><!-- End Client Item -->
-      
-                <div class="col-xl-2 col-md-3 col-6 partners-logo">
-                  <img src="{% static 'assets/img/partners/partner-2.png' %} " class="img-fluid" alt="">
-                </div><!-- End Client Item -->
-      
-                <div class="col-xl-2 col-md-3 col-6 partners-logo">
-                  <img src="{% static 'assets/img/partners/partner-3.png' %}" class="img-fluid" alt="">
-                </div><!-- End Client Item -->
-      
-                <div class="col-xl-2 col-md-3 col-6 partners-logo">
-                  <img src="{% static 'assets/img/partners/partner-4.png' %}" class="img-fluid" alt="">
-                </div><!-- End Client Item -->
-              </div>
-            </div>
-        </div>
-    </section><!-- /Clients Section -->
-
-    <!-- Constructions Section -->
-    <section id="howitworks" class="howitworks section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="">How It Works</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="{% static 'assets/img/howitworks-2.jpg' %}" alt=""></div>
+  
+      </section><!-- /Services Section -->
+  
+      <!-- Team Section -->
+      <section id="team" class="team section">
+  
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Our Team</h2>
+          <p>NABSIL Grain Bank's expert team integrates agricultural, technology, and customer service skills to modernize grain storage and supply chains, promoting food security and economic growth through sustainable practices.</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-5">
+  
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-1.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/nathnael-mengistu/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
-                <div class="col-xl-7 align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Storage</h4>
-                    <p>Farmers bring their harvest  to our facilities, where it is dried and  stored in climate-controlled silos.</p>
+              </div>
+              <div class="member-info text-center">
+                <h4>Nathnael Dereje </h4>
+                <span>Chief Executive Officer | CEO</span>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-2.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/sltanu-kifile" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Sltanu Kifile</h4>
+                <span>Chief Technology Officer | CTO</span>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.linkedin.com/in/mihigobona/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Bonaventure Mihigo </h4>
+                <span>Chief Operation Officer | COO</span>
+              </div>
+            </div><!-- End Team Member -->
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Team Section -->
+      
+      <!-- Clients Section -->
+      <section id="partners" class="partners section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Our Partners</h2>
+        </div><!-- End Section Title -->
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper init-swiper">
+              <div class="container" data-aos="fade-up">
+  
+                <div class="row gy-4 d-flex justify-content-center">
+        
+                  <div class="col-xl-2 col-md-3 col-6 partners-logo">
+                    <img src="{% static 'assets/img/partners/partner-1.png' %} " class="img-fluid" alt="">
+                  </div><!-- End Client Item -->
+        
+                  <div class="col-xl-2 col-md-3 col-6 partners-logo">
+                    <img src="{% static 'assets/img/partners/partner-2.png' %} " class="img-fluid" alt="">
+                  </div><!-- End Client Item -->
+        
+                  <div class="col-xl-2 col-md-3 col-6 partners-logo">
+                    <img src="{% static 'assets/img/partners/partner-3.png' %}" class="img-fluid" alt="">
+                  </div><!-- End Client Item -->
+        
+                  <div class="col-xl-2 col-md-3 col-6 partners-logo">
+                    <img src="{% static 'assets/img/partners/partner-4.png' %}" class="img-fluid" alt="">
+                  </div><!-- End Client Item -->
+                </div>
+              </div>
+          </div>
+      </section><!-- /Clients Section -->
+  
+      <!-- Constructions Section -->
+      <section id="howitworks" class="howitworks section">
+  
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 class="">How It Works</h2>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg"><img src="{% static 'assets/img/howitworks-2.jpg' %}" alt=""></div>
+                  </div>
+                  <div class="col-xl-7 align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">Storage</h4>
+                      <p>Farmers bring their harvest  to our facilities, where it is dried and  stored in climate-controlled silos.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="{% static 'assets/img/howitworks-1.jpg' %}" alt=""></div>
-                </div>
-                <div class="col-xl-7 align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Certificate</h4>
-                    <p>Each farmer receives a  digital certificate representing their  stored grain.</p>
+            </div><!-- End Card Item -->
+  
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg"><img src="{% static 'assets/img/howitworks-1.jpg' %}" alt=""></div>
+                  </div>
+                  <div class="col-xl-7 align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">Certificate</h4>
+                      <p>Each farmer receives a  digital certificate representing their  stored grain.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="{% static 'assets/img/howitworks-3.jpg' %}" alt=""></div>
-                </div>
-                <div class="col-xl-7 align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Trade</h4>
-                    <p>Farmers can sell their grain  directly through our digital platform  or use the certificates as loan  collateral.</p>
+            </div><!-- End Card Item -->
+  
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg"><img src="{% static 'assets/img/howitworks-3.jpg' %}" alt=""></div>
+                  </div>
+                  <div class="col-xl-7 align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">Trade</h4>
+                      <p>Farmers can sell their grain  directly through our digital platform  or use the certificates as loan  collateral.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div><!-- End Card Item -->
-
+            </div><!-- End Card Item -->
+  
+          </div>
+  
         </div>
-
-      </div>
-
-    </section><!-- /Constructions Section -->
+  
+      </section><!-- /Constructions Section -->
+    </section><!-- /About Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -472,58 +467,54 @@
         </div>
 
       </div>
+      <!-- goals Section -->
+      <section id="goals" class="goals section">
+  
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h3>Sustainable Development Goals</h3>
+          <p>We are committed to creating a better future by balancing economic growth, social well-being, and environmental protection.</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-5 justify-content-center">
+  
+            <div class="col-lg-4 col-md-6 w-25" data-aos="fade-up" data-aos-delay="100">
+              <div class="goals-item position-relative">
+                <img src="{% static 'assets/img/goals/goals-1.jpg' %}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-lg-4 col-md-6 w-25" data-aos="fade-up" data-aos-delay="200">
+              <div class="goals-item position-relative">
+                <img src="{% static 'assets/img/goals/goals-2.jpg' %}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-lg-4 col-md-6 w-25" data-aos="fade-up" data-aos-delay="300">
+              <div class="goals-item position-relative">
+                <img src="{% static 'assets/img/goals/goals-3.jpg' %}" class="img-fluid" alt="">
+              </div>
+            </div><!-- End Service Item -->
+  
+          </div>
+  
+        </div>
+        {% if messages %}
+          <div class="col-12 d-flex justify-content-center mt-5">
+              {% for message in messages %}
+                  <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %} alert-dismissible fade show text-center" role="alert">
+                      {{ message }}
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+              {% endfor %}
+          </div>
+        {% endif %}
+  
+      </section><!-- /goals Section -->
 
     </section><!-- /Services Section -->
-
-    <!-- goals Section -->
-    <section id="goals" class="goals section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h3>Sustainable Development Goals</h3>
-        <p>We are committed to creating a better future by balancing economic growth, social well-being, and environmental protection.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="goals-item position-relative bg-danger">
-              <center><div class="icon"><i class="fa-solid fa-people-roof"></i></div></center>
-              <center><h2><a href="#goals" class="stretched-link">No Poverty</a></h2></center>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="goals-item position-relative bg-warning">
-              <center><div class="icon"><i class="fa-solid fa-plate-wheat"></i></div></center>
-              <center><h2><a href="#goals" class="stretched-link">Zero Hunger</a></h2></center>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="goals-item position-relative bg-success">
-              <center><div class="icon"><i class="fa-solid fa-heart-pulse"></i></div></center>
-              <center><h2><a href="#goals" class="stretched-link">Good Health and Well Being</a></h2></center>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-      {% if messages %}
-        <div class="col-12 d-flex justify-content-center mt-5">
-            {% for message in messages %}
-                <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %} alert-dismissible fade show text-center" role="alert">
-                    {{ message }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            {% endfor %}
-        </div>
-      {% endif %}
-
-    </section><!-- /goals Section -->
   </main>
   {% include "nabsil_website/footer/footer.html" %}
   {% if scroll_to %}
