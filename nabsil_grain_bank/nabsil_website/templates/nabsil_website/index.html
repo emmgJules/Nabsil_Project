@@ -39,7 +39,7 @@
           <img src="{% static 'assets/img/hero-carousel/hero-carousel-1.jpg' %}" alt="">
           <div class="carousel-container">
             <h2>NABSIL Grain Bank</h2>
-            <h3>Your Growth Partner</h3>
+            <p>Your Growth Partner</p>
             <a href="#about" class="btn-get-started">Get Started</a>
           </div>
         </div>
@@ -48,7 +48,7 @@
           <img src="{% static 'assets/img/hero-carousel/hero-carousel-2.jpg' %}" alt="">
           <div class="carousel-container">
             <h2>Empowering Farmers</h2>
-            <h3>Transforming Agriculture</h3>
+            <p>Transforming Agriculture</p>
             <a href="#about" class="btn-get-started">Get Started</a>
           </div>
         </div>
@@ -57,7 +57,7 @@
           <img src="{% static 'assets/img/hero-carousel/hero-carousel-3.jpg' %}" alt="">
           <div class="carousel-container">
             <h2>Revolutionizing Agricultural</h2>
-            <h3>Value Chains in Africa</h3>
+            <p>Value Chains in Africa</p>
             <a href="#about" class="btn-get-started">Get Started</a>
           </div>
         </div>
@@ -468,51 +468,55 @@
 
       </div>
       <!-- goals Section -->
-      <section id="goals" class="goals section">
-  
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h3>Sustainable Development Goals</h3>
-          <p>We are committed to creating a better future by balancing economic growth, social well-being, and environmental protection.</p>
-        </div><!-- End Section Title -->
-  
-        <div class="container">
-  
-          <div class="row gy-5 justify-content-center">
-  
-            <div class="col-lg-4 col-md-6 w-25" data-aos="fade-up" data-aos-delay="100">
-              <div class="goals-item position-relative">
-                <img src="{% static 'assets/img/goals/goals-1.jpg' %}" class="img-fluid" alt="">
-              </div>
-            </div><!-- End Service Item -->
-  
-            <div class="col-lg-4 col-md-6 w-25" data-aos="fade-up" data-aos-delay="200">
-              <div class="goals-item position-relative">
-                <img src="{% static 'assets/img/goals/goals-2.jpg' %}" class="img-fluid" alt="">
-              </div>
-            </div><!-- End Service Item -->
-  
-            <div class="col-lg-4 col-md-6 w-25" data-aos="fade-up" data-aos-delay="300">
-              <div class="goals-item position-relative">
-                <img src="{% static 'assets/img/goals/goals-3.jpg' %}" class="img-fluid" alt="">
-              </div>
-            </div><!-- End Service Item -->
-  
+        <section id="goals" class="goals section">
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h3>Sustainable Development Goals</h3>
+            <p>We are committed to creating a better future by balancing economic growth, social well-being, and environmental protection.</p>
           </div>
-  
-        </div>
-        {% if messages %}
-          <div class="col-12 d-flex justify-content-center mt-5">
-              {% for message in messages %}
-                  <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %} alert-dismissible fade show text-center" role="alert">
+          <!-- End Section Title -->
+
+          <div class="container">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="goals-item position-relative">
+                  <img src="{% static 'assets/img/goals/goals-1.jpg' %}" class="img-fluid w-100" alt="Goal 1">
+                </div>
+              </div>
+              <!-- End Service Item -->
+
+              <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+                <div class="goals-item position-relative">
+                  <img src="{% static 'assets/img/goals/goals-2.jpg' %}" class="img-fluid w-100" alt="Goal 2">
+                </div>
+              </div>
+              <!-- End Service Item -->
+
+              <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+                <div class="goals-item position-relative">
+                  <img src="{% static 'assets/img/goals/goals-3.jpg' %}" class="img-fluid w-100" alt="Goal 3">
+                </div>
+              </div>
+              <!-- End Service Item -->
+            </div>
+          </div>
+
+          {% if messages %}
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-12">
+                  {% for message in messages %}
+                    <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %} alert-dismissible fade show text-center" role="alert">
                       {{ message }}
                       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                  </div>
-              {% endfor %}
-          </div>
-        {% endif %}
-  
-      </section><!-- /goals Section -->
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        </section>
+        <!-- /goals Section -->
 
     </section><!-- /Services Section -->
   </main>
